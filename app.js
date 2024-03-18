@@ -19,10 +19,10 @@ function getUsers() {
         let output = '<h2 class="Display-4 ">Users</h2>';
         data.forEach(function(user){
             output += `
-            <ul class="list-group">
-                <li class="list-group-item">ID: ${user.id} </li>
-                <li class="list-group-item">Name: ${user.name} </li>
-                <li class="list-group-item">Email: ${user.email} </li>
+            <ul class="list-group mb-2">
+                <li class="list-group-item list-group-item-info">ID: ${user.id} </li>
+                <li class="list-group-item list-group-item-info">Name: ${user.name} </li>
+                <li class="list-group-item list-group-item-info">Email: ${user.email} </li>
             </ul>
             `
         });
@@ -38,11 +38,11 @@ function getAPI() {
         let output = '<h2>Users</h2>';
         data.forEach(function(user){
             output += `
-            <ul class="list-group>
-                <li class="list-group-item list-group-item-warning">ID: ${user.id} </li>
-                <li class="list-group-item list-group-item-warning">Name: ${user.name} </li>
-                <li class="list-group-item list-group-item-warning">Email: ${user.email} </li>
-                <li class="list-group-item list-group-item-warning">City: ${user.address.city} </li>
+            <ul class="card text-white bg-info mb-3>
+                <div class="card-body">ID: ${user.id} </div>
+                <div class="card-body">Name: ${user.name} </div>
+                <div class="card-body">Email: ${user.email} </div>
+                <div class="card-body">City: ${user.address.city} </div>
             </ul>
             `
         });
